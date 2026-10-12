@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="es-PY">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Delicias &amp; Momentos · Catering de carnes desmechadas</title>
+  <meta name="description" content="Catering especializado en carnes desmechadas de res, pollo y cerdo para cumpleaños, reuniones y eventos en Fernando de la Mora, Asunción y Central. Elegí tus combinaciones y pedí tu presupuesto por WhatsApp.">
+  <meta name="theme-color" content="#FFFDF8">
+  <meta property="og:title" content="Delicias &amp; Momentos · Catering de carnes desmechadas">
+  <meta property="og:description" content="Nos encargamos de la comida para que vos disfrutes el momento.">
+  <meta property="og:image" content="public/images/hero-desmechado.jpg">
+  <meta property="og:locale" content="es_PY">
+  <link rel="icon" href="public/logo-delicias-momentos.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="public/css/styles.css">
+
+  <script>
+    /* =====================================================
+       CONFIGURACIÓN — reemplazá los placeholders reales
+       Número en formato internacional sin "+" ni espacios,
+       por ejemplo: 5959XXXXXXXX
+       ===================================================== */
+    window.DM_CONFIG = {
+      whatsappNumber: "{{WHATSAPP_NUMBER}}",
+      whatsappMessage: "¡Hola Delicias & Momentos! Quiero pedir un presupuesto para mi evento."
+    };
+    document.documentElement.classList.add("js-motion");
+  </script>
+</head>
+<body>
+  <a href="#contenido" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[60] focus:rounded-full focus:bg-brown focus:px-5 focus:py-3 focus:text-warm-white">Saltar al contenido</a>
+
+  <!-- ===================== 1. HEADER ===================== -->
+  <header id="site-header" class="sticky top-0 z-50 border-b border-transparent bg-warm-white/95 backdrop-blur-sm transition-[border-color,box-shadow] duration-300">
+    <div class="container-site flex h-20 items-center justify-between gap-4 lg:h-24">
+      <a href="#inicio" class="shrink-0" aria-label="Delicias &amp; Momentos, ir al inicio">
+        <img src="public/logo-delicias-momentos.png" alt="Delicias &amp; Momentos — Catering de desmechados" width="319" height="167" class="h-14 w-auto lg:h-[4.5rem]">
+      </a>
+
+      <nav aria-label="Principal" class="hidden lg:block">
+        <ul class="flex items-center gap-1 text-[0.95rem] font-medium">
+          <li><a href="#inicio" class="nav-link rounded-full px-4 py-2.5 text-ink transition-colors hover:bg-cream/60 hover:text-brown">Inicio</a></li>
+          <li><a href="#nosotros" class="nav-link rounded-full px-4 py-2.5 text-ink transition-colors hover:bg-cream/60 hover:text-brown">Nosotros</a></li>
+          <li><a href="#productos" class="nav-link rounded-full px-4 py-2.5 text-ink transition-colors hover:bg-cream/60 hover:text-brown">Productos</a></li>
+          <li><a href="#galeria" class="nav-link rounded-full px-4 py-2.5 text-ink transition-colors hover:bg-cream/60 hover:text-brown">Galería</a></li>
+          <li><a href="#contacto" class="nav-link rounded-full px-4 py-2.5 text-ink transition-colors hover:bg-cream/60 hover:text-brown">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <a href="https://wa.me/{{WHATSAPP_NUMBER}}" data-wa target="_blank" rel="noopener" class="btn btn-primary hidden min-h-11 px-5 text-[0.95rem] sm:inline-flex">
+          <svg class="size-[1.1rem]" fill="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Pedir presupuesto
+        </a>
+        <button id="menu-toggle" type="button" class="inline-flex size-12 cursor-pointer items-center justify-center rounded-full text-brown transition-colors hover:bg-cream/60 lg:hidden" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menú">
+          <svg class="icon-open size-7" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M4 5h16" /> <path d="M4 12h16" /> <path d="M4 19h16" /> </svg>
+          <svg class="icon-close hidden size-7" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M18 6 6 18" /> <path d="m6 6 12 12" /> </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menú móvil -->
+    <div id="mobile-menu" class="hidden border-t border-line bg-warm-white lg:hidden">
+      <nav aria-label="Menú móvil" class="container-site py-4">
+        <ul class="flex flex-col text-lg font-medium">
+          <li><a href="#inicio" class="flex min-h-12 items-center rounded-xl px-3 text-ink hover:bg-cream/60">Inicio</a></li>
+          <li><a href="#nosotros" class="flex min-h-12 items-center rounded-xl px-3 text-ink hover:bg-cream/60">Nosotros</a></li>
+          <li><a href="#productos" class="flex min-h-12 items-center rounded-xl px-3 text-ink hover:bg-cream/60">Productos</a></li>
+          <li><a href="#galeria" class="flex min-h-12 items-center rounded-xl px-3 text-ink hover:bg-cream/60">Galería</a></li>
+          <li><a href="#contacto" class="flex min-h-12 items-center rounded-xl px-3 text-ink hover:bg-cream/60">Contacto</a></li>
+        </ul>
+        <a href="https://wa.me/{{WHATSAPP_NUMBER}}" data-wa target="_blank" rel="noopener" class="btn btn-primary btn-lg mt-4 w-full">
+          <svg class="size-5" fill="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Pedir presupuesto por WhatsApp
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ===================== 2. HERO ===================== -->
+    <section id="inicio" class="relative overflow-hidden">
+      <div class="container-site grid items-center gap-10 pt-8 pb-16 sm:pt-12 lg:grid-cols-12 lg:gap-12 lg:pt-14 lg:pb-24">
+        <div class="lg:col-span-6">
+          <p class="eyebrow reveal">Catering de desmechados</p>
+          <h1 class="reveal mt-5 text-[2.6rem] font-semibold sm:text-6xl lg:text-[3.9rem]" style="--delay:80ms">
+            Sabores que hacen especial cada <em class="font-medium text-gold-ink">momento</em>
+          </h1>
+          <p class="reveal mt-6 max-w-xl text-lg text-muted sm:text-xl" style="--delay:160ms">
+            Catering especializado en carnes desmechadas para reuniones, celebraciones y eventos. Elegí tus combinaciones y nosotros nos encargamos del resto.
+          </p>
+          <div class="reveal mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap" style="--delay:240ms">
+            <a href="https://wa.me/{{WHATSAPP_NUMBER}}" data-wa target="_blank" rel="noopener" class="btn btn-primary btn-lg lg:px-6 lg:text-base">
+              <svg class="size-5" fill="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+              Solicitar presupuesto<span class="sr-only"> por WhatsApp</span>
+            </a>
+            <a href="#productos" class="btn btn-secondary btn-lg lg:px-6 lg:text-base">
+              Ver nuestras opciones
+              <svg class="size-5" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /> </svg>
+            </a>
+          </div>
+          <ul class="reveal mt-9 flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium text-muted" style="--delay:320ms">
+            <li class="flex items-center gap-2"><svg class="size-4 text-gold" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 6 9 17l-5-5" /> </svg>Res, pollo y cerdo</li>
+            <li class="flex items-center gap-2"><svg class="size-4 text-gold" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 6 9 17l-5-5" /> </svg>Combinaciones a tu medida</li>
+            <li class="flex items-center gap-2"><svg class="size-4 text-gold" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 6 9 17l-5-5" /> </svg>Coordinación directa</li>
+          </ul>
+        </div>
+
+        <div class="relative lg:col-span-6">
+          <figure class="photo reveal aspect-[4/3] rounded-[2rem] sm:aspect-[5/4] lg:aspect-[6/5]"><div class="photo-ph" aria-hidden="true"><svg class="" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <rect x="3" y="3" rx="2" ry="2" /> <circle cx="9" cy="9" r="2" /> <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" /> </svg><span>public/images/hero-desmechado.jpg</span></div><img src="public/images/hero-desmechado.jpg" alt="Bandeja de catering con carne desmechada, acompañamientos y salsas" loading="eager" fetchpriority="high" decoding="async" onerror="this.remove()"></figure>
+          <div class="reveal absolute -bottom-6 left-4 hidden w-44 rounded-2xl border-4 border-warm-white sm:block lg:-left-8 lg:w-52" style="--delay:200ms">
+            <figure class="photo aspect-square rounded-xl"><div class="photo-ph" aria-hidden="true"><svg class="" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <rect x="3" y="3" rx="2" ry="2" /> <circle cx="9" cy="9" r="2" /> <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" /> </svg><span>public/images/hero-detalle.jpg</span></div><img src="public/images/hero-detalle.jpg" alt="Detalle de carne desmechada recién preparada" loading="lazy" decoding="async" onerror="this.remove()"></figure>
+          </div>
+          <div aria-hidden="true" class="absolute -top-4 -right-4 -z-10 size-40 rounded-full bg-cream sm:size-56"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 3. QUIÉNES SOMOS ===================== -->
+    <section id="nosotros" class="bg-cream-soft py-20 lg:py-28">
+      <div class="container-site grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+        <div class="reveal order-2 lg:order-1">
+          <div class="grid grid-cols-5 gap-4">
+            <figure class="photo col-span-3 aspect-[3/4] rounded-[1.5rem]"><div class="photo-ph" aria-hidden="true"><svg class="" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <rect x="3" y="3" rx="2" ry="2" /> <circle cx="9" cy="9" r="2" /> <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" /> </svg><span>public/images/nosotros.jpg</span></div><img src="public/images/nosotros.jpg" alt="Preparación de carnes desmechadas en la cocina de Delicias &amp; Momentos" loading="lazy" decoding="async" onerror="this.remove()"></figure>
+            <div class="col-span-2 flex flex-col gap-4">
+              <div class="flex flex-1 items-center justify-center rounded-[1.5rem] bg-warm-white p-4">
+                <img src="public/logo-delicias-momentos.png" alt="" width="319" height="167" class="w-full max-w-40" loading="lazy">
+              </div>
+              <figure class="photo aspect-square rounded-[1.5rem]"><div class="photo-ph" aria-hidden="true"><svg class="" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <rect x="3" y="3" rx="2" ry="2" /> <circle cx="9" cy="9" r="2" /> <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" /> </svg><span>public/images/nosotros-detalle.jpg</span></div><img src="public/images/nosotros-detalle.jpg" alt="Montaje de catering listo para servir" loading="lazy" decoding="async" onerror="this.remove()"></figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="order-1 lg:order-2">
+          <p class="eyebrow reveal">Quiénes somos</p>
+          <h2 class="section-title reveal">Delicias &amp; Momentos</h2>
+          <div class="reveal mt-6 space-y-4 text-lg text-muted">
+            <p>Delicias &amp; Momentos nace con la idea de ofrecer una alternativa práctica y diferente dentro del catering.</p>
+            <p>Nos especializamos en carnes desmechadas de res, pollo y cerdo, acompañadas de distintas opciones para crear combinaciones adaptadas a cada evento.</p>
+            <p>Buscamos que nuestros clientes puedan disfrutar de sus reuniones sin preocuparse por la preparación de la comida.</p>
+          </div>
+          <ul class="reveal mt-10 grid grid-cols-2 gap-x-6 gap-y-6">
+            <li class="flex items-center gap-3"><span class="icon-badge bg-warm-white"><svg class="size-6" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526" /> <circle cx="12" cy="8" r="6" /> </svg></span><span class="font-semibold text-brown">Calidad</span></li>
+            <li class="flex items-center gap-3"><span class="icon-badge bg-warm-white"><svg class="size-6" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4" /> </svg></span><span class="font-semibold text-brown">Sabor</span></li>
+            <li class="flex items-center gap-3"><span class="icon-badge bg-warm-white"><svg class="size-6" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <circle cx="12" cy="12" r="10" /> <path d="M12 6v6h4" /> </svg></span><span class="font-semibold text-brown">Puntualidad</span></li>
+            <li class="flex items-center gap-3"><span class="icon-badge bg-warm-white"><svg class="size-6" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M19.414 14.414C21 12.828 22 11.5 22 9.5a5.5 5.5 0 0 0-9.591-3.676.6.6 0 0 1-.818.001A5.5 5.5 0 0 0 2 9.5c0 2.3 1.5 4 3 5.5l5.535 5.362a2 2 0 0 0 2.879.052 2.12 2.12 0 0 0-.004-3 2.124 2.124 0 1 0 3-3 2.124 2.124 0 0 0 3.004 0 2 2 0 0 0 0-2.828l-1.881-1.882a2.41 2.41 0 0 0-3.409 0l-1.71 1.71a2 2 0 0 1-2.828 0 2 2 0 0 1 0-2.828l2.823-2.762" /> </svg></span><span class="font-semibold text-brown">Atención personalizada</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 4. PRODUCTOS ===================== -->
+    <section id="productos" class="py-20 lg:py-28">
+      <div class="container-site">
+        <div class="max-w-2xl">
+          <p class="eyebrow reveal">Nuestros productos</p>
+          <h2 class="section-title reveal">Tres carnes, preparadas con tiempo</h2>
+          <p class="section-lead reveal">Elegí una, dos o las tres. Cada una se puede combinar con salsas y acompañamientos.</p>
+        </div>
+
+        <ul class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+          <li class="reveal">
+            <article class="card card-hover h-full overflow-hidden">
+              <figure class="photo aspect-[4/3]"><div class="photo-ph" aria-hidden="true"><svg class="" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <rect x="3" y="3" rx="2" ry="2" /> <circle cx="9" cy="9" r="2" /> <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" /> </svg><span>public/images/res-desmechada.jpg</span></div><img src="public/images/res-desmechada.jpg" alt="Carne de res desmechada servida en bandeja" loading="lazy" decoding="async" onerror="this.remove()"></figure>
+              <div class="p-6 lg:p-7">
+                <h3 class="text-2xl font-semibold">Res desmechada</h3>
+                <p class="mt-2 text-muted">Sabor intenso y preparación lenta.</p>
+              </div>
+            </article>
+          </li>
+          <li class="reveal" style="--delay:100ms">
+            <article class="card card-hover h-full overflow-hidden">
+              <figure class="photo aspect-[4/3]"><div class="photo-ph" aria-hidden="true"><svg class="" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <rect x="3" y="3" rx="2" ry="2" /> <circle cx="9" cy="9" r="2" /> <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" /> </svg><span>public/images/pollo-desmechado.jpg</span></div><img src="public/images/pollo-desmechado.jpg" alt="Pollo desmechado servido en bandeja" loading="lazy" decoding="async" onerror="this.remove()"></figure>
+              <div class="p-6 lg:p-7">
+                <h3 class="text-2xl font-semibold">Pollo desmechado</h3>
+                <p class="mt-2 text-muted">Una opción suave y versátil.</p>
+              </div>
+            </article>
+          </li>
+          <li class="reveal sm:col-span-2 lg:col-span-1" style="--delay:200ms">
+            <article class="card card-hover h-full overflow-hidden">
+              <figure class="photo aspect-[4/3] sm:aspect-[8/3] lg:aspect-[4/3]"><div class="photo-ph" aria-hidden="true"><svg class="" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <rect x="3" y="3" rx="2" ry="2" /> <circle cx="9" cy="9" r="2" /> <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" /> </svg><span>public/images/cerdo-desmechado.jpg</span></div><img src="public/images/cerdo-desmechado.jpg" alt="Cerdo desmechado servido en bandeja" loading="lazy" decoding="async" onerror="this.remove()"></figure>
+              <div class="p-6 lg:p-7">
+                <h3 class="text-2xl font-semibold">Cerdo desmechado</h3>
+                <p class="mt-2 text-muted">Jugoso y lleno de sabor.</p>
+              </div>
+            </article>
+          </li>
+        </ul>
+
+        <!-- Armá tu combinación -->
+        <div class="reveal mt-16 overflow-hidden rounded-[2rem] bg-cream lg:mt-20">
+          <div class="grid lg:grid-cols-2">
+            <div class="p-7 sm:p-10 lg:p-14">
+              <p class="eyebrow">A tu medida</p>
+              <h3 class="mt-3 text-3xl font-semibold sm:text-4xl">Armá tu combinación</h3>
+              <p class="mt-4 max-w-md text-lg text-ink/80">Vos elegís qué va en la mesa. Lo armamos según tu evento y tu presupuesto.</p>
+
+              <ol class="mt-8 space-y-3" aria-label="Lo que podés combinar">
+                <li class="flex items-center gap-4 rounded-2xl bg-warm-white px-4 py-3"><span class="icon-badge size-10"><svg class="size-5" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M16.4 13.7A6.5 6.5 0 1 0 6.28 6.6c-1.1 3.13-.78 3.9-3.18 6.08A3 3 0 0 0 5 18c4 0 8.4-1.8 11.4-4.3" /> <path d="m18.5 6 1.754 3.5a6.48 6.48 0 0 1-1.854 8.2C15.4 20.2 11 22 7 22a3 3 0 0 1-2.68-1.66L2.4 16.5" /> <circle cx="12.5" cy="8.5" r="2.5" /> </svg></span><span class="font-semibold text-brown">Carnes</span><span class="ml-auto text-sm text-muted">res · pollo · cerdo</span></li>
+                <li class="flex items-center gap-4 rounded-2xl bg-warm-white px-4 py-3"><span class="icon-badge size-10"><svg class="size-5" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M11.248 3c.273.1.808.53.747 1.36-.05.83-.938 1.2-.989 2.02-.06.78.333 1.24.727 1.62" /> <path d="M16.252 3c.268.1.794.53.745 1.36-.06.83-.923 1.2-.993 2.02-.05.78.338 1.24.725 1.62" /> <path d="M19.5 12 22 6" /> <path d="M4 12a1 1 0 00-.99 1.133A9 9 0 0012 21a9 9 0 008.99-7.867A1 1 0 0020 12z" /> <path d="M6.252 3c.268.1.794.53.745 1.36-.06.83-.923 1.2-.993 2.02-.05.78.338 1.24.735 1.62" /> <path d="M7 21h10" /> </svg></span><span class="font-semibold text-brown">Salsas</span></li>
+                <li class="flex items-center gap-4 rounded-2xl bg-warm-white px-4 py-3"><span class="icon-badge size-10"><svg class="size-5" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M19.496 12a2.5 2.5 0 00.399-2.214A2 2 0 0020.32 6.5 2 2 0 0019 3a2 2 0 00-1.5.68 2 2 0 00-3.287.424 2.5 2.5 0 00-3.189 2.06A3 3 0 0012 12l4-4" /> <path d="M4 12a1 1 0 00-.99 1.133A9 9 0 0012 21a9 9 0 008.99-7.867A1 1 0 0020 12z" /> <path d="M7 21h10" /> <path d="M9.85 6.907A3.5 3.5 0 005.05 12" /> </svg></span><span class="font-semibold text-brown">Vegetales</span></li>
+                <li class="flex items-center gap-4 rounded-2xl bg-warm-white px-4 py-3"><span class="icon-badge size-10"><svg class="size-5" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M2 22 16 8" /> <path d="M3.47 12.53 5 11l1.53 1.53a3.5 3.5 0 0 1 0 4.94L5 19l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z" /> <path d="M7.47 8.53 9 7l1.53 1.53a3.5 3.5 0 0 1 0 4.94L9 15l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z" /> <path d="M11.47 4.53 13 3l1.53 1.53a3.5 3.5 0 0 1 0 4.94L13 11l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z" /> <path d="M20 2h2v2a4 4 0 0 1-4 4h-2V6a4 4 0 0 1 4-4Z" /> <path d="M11.47 17.47 13 19l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L5 19l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z" /> <path d="M15.47 13.47 17 15l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L9 15l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z" /> <path d="M19.47 9.47 21 11l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L13 11l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z" /> </svg></span><span class="font-semibold text-brown">Acompañamientos</span></li>
+                <li class="flex items-center gap-4 rounded-2xl bg-warm-white px-4 py-3"><span class="icon-badge size-10"><svg class="size-5" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /> <path d="M16 3.128a4 4 0 0 1 0 7.744" /> <path d="M22 21v-2a4 4 0 0 0-3-3.87" /> <circle cx="9" cy="7" r="4" /> </svg></span><span class="font-semibold text-brown">Cantidades</span><span class="ml-auto text-sm text-muted">según tus invitados</span></li>
+              </ol>
+
+              <a href="https://wa.me/{{WHATSAPP_NUMBER}}" data-wa data-wa-msg="¡Hola Delicias &amp; Momentos! Quiero consultar las opciones para armar mi combinación." target="_blank" rel="noopener" class="btn btn-primary btn-lg mt-8 w-full sm:w-auto">
+                <svg class="size-5" fill="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                Consultar opciones<span class="sr-only"> por WhatsApp</span>
+              </a>
+            </div>
+            <figure class="photo min-h-72 lg:min-h-full"><div class="photo-ph" aria-hidden="true"><svg class="" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <rect x="3" y="3" rx="2" ry="2" /> <circle cx="9" cy="9" r="2" /> <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" /> </svg><span>public/images/combinacion.jpg</span></div><img src="public/images/combinacion.jpg" alt="Mesa de catering con distintas carnes desmechadas, salsas y acompañamientos" loading="lazy" decoding="async" onerror="this.remove()"></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 5. CÓMO FUNCIONA ===================== -->
+    <section id="como-funciona" class="border-y border-line bg-cream-soft py-20 lg:py-28">
+      <div class="container-site">
+        <div class="mx-auto max-w-2xl text-center">
+          <p class="eyebrow reveal justify-center">Cómo funciona</p>
+          <h2 class="section-title reveal">Pedir es simple</h2>
+        </div>
+        <div class="relative mt-14">
+        <div aria-hidden="true" class="absolute top-8 right-[16%] left-[16%] hidden border-t-2 border-dashed border-gold/50 md:block"></div>
+        <ol class="relative grid gap-10 md:grid-cols-3 md:gap-8">
+          <li class="reveal relative text-center">
+            <span class="relative mx-auto flex size-16 items-center justify-center rounded-full bg-brown text-warm-white"><svg class="size-7" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /> </svg></span>
+            <p class="mt-5 font-serif text-sm font-semibold tracking-widest text-gold-ink uppercase">Paso 1</p>
+            <h3 class="mt-1 text-2xl font-semibold">Contanos sobre tu evento</h3>
+            <p class="mx-auto mt-2 max-w-xs text-muted">Cantidad de personas, fecha y tipo de celebración.</p>
+          </li>
+          <li class="reveal relative text-center" style="--delay:120ms">
+            <span class="relative mx-auto flex size-16 items-center justify-center rounded-full bg-brown text-warm-white"><svg class="size-7" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <rect x="8" y="2" rx="1" ry="1" /> <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" /> <path d="M12 11h4" /> <path d="M12 16h4" /> <path d="M8 11h.01" /> <path d="M8 16h.01" /> </svg></span>
+            <p class="mt-5 font-serif text-sm font-semibold tracking-widest text-gold-ink uppercase">Paso 2</p>
+            <h3 class="mt-1 text-2xl font-semibold">Elegí tu combinación</h3>
+            <p class="mx-auto mt-2 max-w-xs text-muted">Seleccioná carnes, acompañamientos y opciones.</p>
+          </li>
+          <li class="reveal relative text-center" style="--delay:240ms">
+            <span class="relative mx-auto flex size-16 items-center justify-center rounded-full bg-brown text-warm-white"><svg class="size-7" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M17 21a1 1 0 0 0 1-1v-5.35c0-.457.316-.844.727-1.041a4 4 0 0 0-2.134-7.589 5 5 0 0 0-9.186 0 4 4 0 0 0-2.134 7.588c.411.198.727.585.727 1.041V20a1 1 0 0 0 1 1Z" /> <path d="M6 17h12" /> </svg></span>
+            <p class="mt-5 font-serif text-sm font-semibold tracking-widest text-gold-ink uppercase">Paso 3</p>
+            <h3 class="mt-1 text-2xl font-semibold">Nosotros lo preparamos</h3>
+            <p class="mx-auto mt-2 max-w-xs text-muted">Coordinamos el pedido y la entrega.</p>
+          </li>
+        </ol>
+        </div>
+        <div class="reveal mt-14 text-center">
+          <a href="https://wa.me/{{WHATSAPP_NUMBER}}" data-wa target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+            <svg class="size-5" fill="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Solicitar presupuesto por WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 6. POR QUÉ ELEGIRNOS ===================== -->
+    <section id="por-que" class="py-20 lg:py-28">
+      <div class="container-site grid gap-12 lg:grid-cols-12 lg:gap-16">
+        <div class="lg:col-span-4">
+          <p class="eyebrow reveal">Por qué elegirnos</p>
+          <h2 class="section-title reveal">Hacemos pocas cosas, y las hacemos bien</h2>
+        </div>
+        <ul class="grid gap-x-10 sm:grid-cols-2 lg:col-span-8">
+          <li class="reveal flex gap-5 border-t border-line py-7">
+            <svg class="mt-1 size-7 shrink-0 text-gold" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4" /> </svg>
+            <div><h3 class="text-xl font-semibold">Especialización en carnes desmechadas</h3><p class="mt-2 text-muted">Es lo que sabemos hacer y en lo que ponemos toda la atención.</p></div>
+          </li>
+          <li class="reveal flex gap-5 border-t border-line py-7" style="--delay:80ms">
+            <svg class="mt-1 size-7 shrink-0 text-gold" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z" /> <path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12" /> <path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17" /> </svg>
+            <div><h3 class="text-xl font-semibold">Preparaciones personalizables</h3><p class="mt-2 text-muted">Armás el pedido según tu evento y tu presupuesto.</p></div>
+          </li>
+          <li class="reveal flex gap-5 border-t border-line py-7" style="--delay:160ms">
+            <svg class="mt-1 size-7 shrink-0 text-gold" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M11 20a10 10 0 0010-10 25.9 25.9 0 00-1.04-7.281 1 1 0 00-1.755-.325C15.833 5.5 13 5.5 9.8 6.1A7 7 0 0011 20" /> <path d="M2 21a5 5 0 012.911-4.544C7.613 15.212 8.351 15.24 11 13" /> </svg>
+            <div><h3 class="text-xl font-semibold">Ingredientes seleccionados</h3><p class="mt-2 text-muted">Elegimos con cuidado lo que llega a tu mesa.</p></div>
+          </li>
+          <li class="reveal flex gap-5 border-t border-line py-7" style="--delay:240ms">
+            <svg class="mt-1 size-7 shrink-0 text-gold" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="m11 17 2 2a1 1 0 1 0 3-3" /> <path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" /> <path d="m21 3 1 11h-2" /> <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" /> <path d="M3 4h8" /> </svg>
+            <div><h3 class="text-xl font-semibold">Atención y coordinación directa</h3><p class="mt-2 text-muted">Hablás directamente con nosotros, de la consulta a la entrega.</p></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== 7. GALERÍA ===================== -->
+    <section id="galeria" class="bg-cream-soft py-20 lg:py-28">
+      <div class="container-site">
+        <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p class="eyebrow reveal">Galería</p>
+            <h2 class="section-title reveal">Así llega a tu mesa</h2>
+          </div>
+          <a href="{{INSTAGRAM_URL}}" target="_blank" rel="noopener" class="reveal inline-flex min-h-12 items-center gap-2 font-semibold text-brown underline-offset-4 hover:underline">
+            <svg class="size-5" fill="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg> Ver más en Instagram
+          </a>
+        </div>
+
+        <ul class="mt-10 grid auto-rows-[9.5rem] grid-cols-2 gap-3 sm:auto-rows-[12rem] sm:gap-4 lg:grid-cols-4 lg:auto-rows-[13rem]">
+          <li class="reveal col-span-2 row-span-2"><figure class="photo size-full rounded-[1.25rem]"><div class="photo-ph" aria-hidden="true"><svg class="" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <rect x="3" y="3" rx="2" ry="2" /> <circle cx="9" cy="9" r="2" /> <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" /> </svg><span>public/images/galeria-01.jpg</span></div><img src="public/images/galeria-01.jpg" alt="Bandeja de carne desmechada lista para servir" loading="lazy" decoding="async" onerror="this.remove()"></figure></li>
+          <li class="reveal row-span-2" style="--delay:60ms"><figure class="photo size-full rounded-[1.25rem]"><div class="photo-ph" aria-hidden="true"><svg class="" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <rect x="3" y="3" rx="2" ry="2" /> <circle cx="9" cy="9" r="2" /> <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" /> </svg><span>public/images/galeria-02.jpg</span></div><img src="public/images/galeria-02.jpg" alt="Acompañamientos servidos en recipientes" loading="lazy" decoding="async" onerror="this.remove()"></figure></li>
+          <li class="reveal" style="--delay:120ms"><figure class="photo size-full rounded-[1.25rem]"><div class="photo-ph" aria-hidden="true"><svg class="" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <rect x="3" y="3" rx="2" ry="2" /> <circle cx="9" cy="9" r="2" /> <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" /> </svg><span>public/images/galeria-03.jpg</span></div><img src="public/images/galeria-03.jpg" alt="Salsas caseras para acompañar las carnes" loading="lazy" decoding="async" onerror="this.remove()"></figure></li>
+          <li class="reveal" style="--delay:180ms"><figure class="photo size-full rounded-[1.25rem]"><div class="photo-ph" aria-hidden="true"><svg class="" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <rect x="3" y="3" rx="2" ry="2" /> <circle cx="9" cy="9" r="2" /> <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" /> </svg><span>public/images/galeria-04.jpg</span></div><img src="public/images/galeria-04.jpg" alt="Pollo desmechado en primer plano" loading="lazy" decoding="async" onerror="this.remove()"></figure></li>
+          <li class="reveal row-span-2 lg:row-span-1" style="--delay:60ms"><figure class="photo size-full rounded-[1.25rem]"><div class="photo-ph" aria-hidden="true"><svg class="" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <rect x="3" y="3" rx="2" ry="2" /> <circle cx="9" cy="9" r="2" /> <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" /> </svg><span>public/images/galeria-05.jpg</span></div><img src="public/images/galeria-05.jpg" alt="Montaje de mesa de catering en un evento" loading="lazy" decoding="async" onerror="this.remove()"></figure></li>
+          <li class="reveal lg:col-span-2" style="--delay:120ms"><figure class="photo size-full rounded-[1.25rem]"><div class="photo-ph" aria-hidden="true"><svg class="" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <rect x="3" y="3" rx="2" ry="2" /> <circle cx="9" cy="9" r="2" /> <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" /> </svg><span>public/images/galeria-06.jpg</span></div><img src="public/images/galeria-06.jpg" alt="Invitados disfrutando del catering en una celebración" loading="lazy" decoding="async" onerror="this.remove()"></figure></li>
+          <li class="reveal" style="--delay:180ms"><figure class="photo size-full rounded-[1.25rem]"><div class="photo-ph" aria-hidden="true"><svg class="" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <rect x="3" y="3" rx="2" ry="2" /> <circle cx="9" cy="9" r="2" /> <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" /> </svg><span>public/images/galeria-07.jpg</span></div><img src="public/images/galeria-07.jpg" alt="Presentación del producto con detalles de la marca" loading="lazy" decoding="async" onerror="this.remove()"></figure></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== 8. EVENTOS ===================== -->
+    <section id="eventos" class="py-20 lg:py-28">
+      <div class="container-site">
+        <div class="max-w-2xl">
+          <p class="eyebrow reveal">Para tu evento</p>
+          <h2 class="section-title reveal">¿Qué estás celebrando?</h2>
+          <p class="section-lead reveal">Pensado para celebraciones pequeñas y medianas.</p>
+        </div>
+        <ul class="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-5">
+          <li class="reveal"><div class="flex h-full flex-col items-start gap-4 rounded-[1.25rem] border border-line bg-warm-white p-5 transition-colors hover:border-gold hover:bg-cream-soft"><span class="icon-badge"><svg class="size-6" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8" /> <path d="M4 16s.5-1 2-1 2.5 2 4 2 2.5-2 4-2 2.5 2 4 2 2-1 2-1" /> <path d="M2 21h20" /> <path d="M7 8v3" /> <path d="M12 8v3" /> <path d="M17 8v3" /> <path d="M7 4h.01" /> <path d="M12 4h.01" /> <path d="M17 4h.01" /> </svg></span><span class="font-serif text-lg font-semibold text-brown">Cumpleaños</span></div></li>
+          <li class="reveal" style="--delay:60ms"><div class="flex h-full flex-col items-start gap-4 rounded-[1.25rem] border border-line bg-warm-white p-5 transition-colors hover:border-gold hover:bg-cream-soft"><span class="icon-badge"><svg class="size-6" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" /> <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /> </svg></span><span class="font-serif text-lg font-semibold text-brown">Reuniones familiares</span></div></li>
+          <li class="reveal" style="--delay:120ms"><div class="flex h-full flex-col items-start gap-4 rounded-[1.25rem] border border-line bg-warm-white p-5 transition-colors hover:border-gold hover:bg-cream-soft"><span class="icon-badge"><svg class="size-6" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" /> <rect x="2" y="6" rx="2" /> </svg></span><span class="font-serif text-lg font-semibold text-brown">Eventos empresariales</span></div></li>
+          <li class="reveal" style="--delay:180ms"><div class="flex h-full flex-col items-start gap-4 rounded-[1.25rem] border border-line bg-warm-white p-5 transition-colors hover:border-gold hover:bg-cream-soft"><span class="icon-badge"><svg class="size-6" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M18 21a8 8 0 0 0-16 0" /> <circle cx="10" cy="8" r="5" /> <path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3" /> </svg></span><span class="font-serif text-lg font-semibold text-brown">Encuentros con amigos</span></div></li>
+          <li class="reveal col-span-2 sm:col-span-1" style="--delay:240ms"><div class="flex h-full flex-col items-start gap-4 rounded-[1.25rem] border border-line bg-warm-white p-5 transition-colors hover:border-gold hover:bg-cream-soft"><span class="icon-badge"><svg class="size-6" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5.8 11.3 2 22l10.7-3.79" /> <path d="M4 3h.01" /> <path d="M22 8h.01" /> <path d="M15 2h.01" /> <path d="M22 20h.01" /> <path d="m22 2-2.24.75a2.9 2.9 0 0 0-1.96 3.12c.1.86-.57 1.63-1.45 1.63h-.38c-.86 0-1.6.6-1.76 1.44L14 10" /> <path d="m22 13-.82-.33c-.86-.34-1.82.2-1.98 1.11c-.11.7-.72 1.22-1.43 1.22H17" /> <path d="m11 2 .33.82c.34.86-.2 1.82-1.11 1.98C9.52 4.9 9 5.52 9 6.23V7" /> <path d="M11 13c1.93 1.93 2.83 4.17 2 5-.83.83-3.07-.07-5-2-1.93-1.93-2.83-4.17-2-5 .83-.83 3.07.07 5 2Z" /> </svg></span><span class="font-serif text-lg font-semibold text-brown">Celebraciones especiales</span></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== 9. ZONA DE COBERTURA ===================== -->
+    <section id="cobertura" class="pb-20 lg:pb-28">
+      <div class="container-site">
+        <div class="reveal grid items-center gap-10 rounded-[2rem] border border-line bg-cream-soft p-7 sm:p-10 lg:grid-cols-2 lg:p-14">
+          <div>
+            <p class="eyebrow">Zona de cobertura</p>
+            <h2 class="section-title">¿Hasta dónde llegamos?</h2>
+            <p class="mt-4 text-lg text-muted">Los pedidos se coordinan previamente según ubicación, cantidad de personas y características del evento.</p>
+            <a href="{{GOOGLE_MAPS_URL}}" target="_blank" rel="noopener" class="mt-6 inline-flex min-h-12 items-center gap-2 font-semibold text-brown underline-offset-4 hover:underline">
+              <svg class="size-5" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z" /> <path d="M15 5.764v15" /> <path d="M9 3.236v15" /> </svg> Ver ubicación en Google Maps
+            </a>
+          </div>
+          <div>
+            <p class="font-semibold text-brown">Atendemos inicialmente en:</p>
+            <ul class="mt-4 space-y-3">
+              <li class="flex items-center gap-4 rounded-2xl bg-warm-white px-5 py-4"><svg class="size-6 shrink-0 text-gold" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /> <circle cx="12" cy="10" r="3" /> </svg><span class="text-lg font-semibold text-ink">Fernando de la Mora</span></li>
+              <li class="flex items-center gap-4 rounded-2xl bg-warm-white px-5 py-4"><svg class="size-6 shrink-0 text-gold" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /> <circle cx="12" cy="10" r="3" /> </svg><span class="text-lg font-semibold text-ink">Asunción</span></li>
+              <li class="flex items-center gap-4 rounded-2xl bg-warm-white px-5 py-4"><svg class="size-6 shrink-0 text-gold" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /> <circle cx="12" cy="10" r="3" /> </svg><span class="text-lg font-semibold text-ink">Ciudades cercanas del Departamento Central</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 10. CTA FINAL ===================== -->
+    <section id="contacto" class="pb-20 lg:pb-28">
+      <div class="container-site">
+        <div class="reveal relative overflow-hidden rounded-[2rem] bg-brown px-6 py-16 text-center sm:px-12 lg:py-24">
+          <div aria-hidden="true" class="pointer-events-none absolute inset-0 opacity-[0.07]" style="background-image:repeating-linear-gradient(135deg,#F4E6C2 0 1px,transparent 1px 18px)"></div>
+          <div aria-hidden="true" class="mx-auto mb-8 flex items-center justify-center gap-3 text-gold-light">
+            <span class="h-px w-12 bg-gold-light/60"></span><svg class="size-6" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4" /> </svg><span class="h-px w-12 bg-gold-light/60"></span>
+          </div>
+          <h2 class="relative mx-auto max-w-3xl text-4xl font-semibold text-warm-white sm:text-5xl">
+            Vos disfrutá el momento. <span class="text-gold-light italic">Nosotros nos encargamos del sabor.</span>
+          </h2>
+          <p class="relative mx-auto mt-6 max-w-xl text-lg text-cream">
+            Contanos cuántas personas son, la fecha de tu evento y qué tipo de propuesta estás buscando.
+          </p>
+          <a href="https://wa.me/{{WHATSAPP_NUMBER}}" data-wa target="_blank" rel="noopener" class="btn btn-light btn-lg relative mt-10 w-full sm:w-auto">
+            <svg class="size-6 text-whatsapp" fill="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Pedir presupuesto por WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== 11. FOOTER ===================== -->
+  <footer class="bg-brown-dark pt-16 pb-28 text-cream lg:pb-12">
+    <div class="container-site">
+      <div class="grid gap-12 md:grid-cols-12">
+        <div class="md:col-span-5">
+          <div class="inline-block rounded-2xl bg-warm-white px-5 py-4">
+            <img src="public/logo-delicias-momentos.png" alt="Delicias &amp; Momentos" width="319" height="167" class="h-20 w-auto" loading="lazy">
+          </div>
+          <p class="mt-6 max-w-sm text-cream">Catering especializado en carnes desmechadas.</p>
+          <p class="mt-3 flex items-center gap-2 text-cream"><svg class="size-5 text-gold-light" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /> <circle cx="12" cy="10" r="3" /> </svg>Fernando de la Mora, Paraguay.</p>
+        </div>
+
+        <nav aria-label="Secciones" class="md:col-span-3">
+          <h2 class="font-serif text-lg font-semibold text-warm-white">Secciones</h2>
+          <ul class="mt-4 space-y-1">
+            <li><a href="#nosotros" class="inline-flex min-h-11 items-center hover:text-gold-light">Nosotros</a></li>
+            <li><a href="#productos" class="inline-flex min-h-11 items-center hover:text-gold-light">Productos</a></li>
+            <li><a href="#como-funciona" class="inline-flex min-h-11 items-center hover:text-gold-light">Cómo funciona</a></li>
+            <li><a href="#galeria" class="inline-flex min-h-11 items-center hover:text-gold-light">Galería</a></li>
+          </ul>
+        </nav>
+
+        <div class="md:col-span-4">
+          <h2 class="font-serif text-lg font-semibold text-warm-white">Contacto</h2>
+          <ul class="mt-4 space-y-1">
+            <li><a href="https://wa.me/{{WHATSAPP_NUMBER}}" data-wa target="_blank" rel="noopener" class="inline-flex min-h-11 items-center gap-3 hover:text-gold-light"><svg class="size-5" fill="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>WhatsApp</a></li>
+            <li><a href="{{INSTAGRAM_URL}}" target="_blank" rel="noopener" class="inline-flex min-h-11 items-center gap-3 hover:text-gold-light"><svg class="size-5" fill="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg>Instagram</a></li>
+            <li><a href="{{FACEBOOK_URL}}" target="_blank" rel="noopener" class="inline-flex min-h-11 items-center gap-3 hover:text-gold-light"><svg class="size-5" fill="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>Facebook</a></li>
+            <li><a href="{{TIKTOK_URL}}" target="_blank" rel="noopener" class="inline-flex min-h-11 items-center gap-3 hover:text-gold-light"><svg class="size-5" fill="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>TikTok</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-14 flex flex-col gap-2 border-t border-cream/15 pt-6 text-sm text-cream/80 sm:flex-row sm:justify-between">
+        <p>© <span id="year">2026</span> Delicias &amp; Momentos. Todos los derechos reservados.</p>
+        <p>Nos encargamos de la comida para que vos disfrutes el momento.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp (móvil) -->
+  <a href="https://wa.me/{{WHATSAPP_NUMBER}}" data-wa target="_blank" rel="noopener" aria-label="Pedir presupuesto por WhatsApp" class="fixed right-4 bottom-4 z-40 inline-flex size-16 items-center justify-center rounded-full bg-whatsapp text-white shadow-lg ring-4 ring-warm-white transition-transform hover:scale-105 lg:hidden">
+    <svg class="size-8" fill="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+  </a>
+
+  <script>
+    (function () {
+      var cfg = window.DM_CONFIG || {};
+      var num = String(cfg.whatsappNumber || "").replace(/\D/g, "");
+      var configured = num.length > 6 && cfg.whatsappNumber.indexOf("{{") === -1;
+
+      // Enlaces de WhatsApp
+      document.querySelectorAll("[data-wa]").forEach(function (a) {
+        var msg = a.getAttribute("data-wa-msg") || cfg.whatsappMessage || "";
+        if (configured) {
+          a.href = "https://wa.me/" + num + (msg ? "?text=" + encodeURIComponent(msg) : "");
+        }
+      });
+
+      // Menú móvil
+      var toggle = document.getElementById("menu-toggle");
+      var menu = document.getElementById("mobile-menu");
+      function setMenu(open) {
+        toggle.setAttribute("aria-expanded", String(open));
+        toggle.setAttribute("aria-label", open ? "Cerrar menú" : "Abrir menú");
+        menu.classList.toggle("hidden", !open);
+        toggle.querySelector(".icon-open").classList.toggle("hidden", open);
+        toggle.querySelector(".icon-close").classList.toggle("hidden", !open);
+      }
+      toggle.addEventListener("click", function () { setMenu(toggle.getAttribute("aria-expanded") !== "true"); });
+      menu.querySelectorAll("a").forEach(function (a) { a.addEventListener("click", function () { setMenu(false); }); });
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" && toggle.getAttribute("aria-expanded") === "true") { setMenu(false); toggle.focus(); }
+      });
+      window.matchMedia("(min-width: 1024px)").addEventListener("change", function (e) { if (e.matches) setMenu(false); });
+
+      // Borde del header al hacer scroll
+      var header = document.getElementById("site-header");
+      function onScroll() {
+        var s = window.scrollY > 8;
+        header.classList.toggle("border-line", s);
+        header.classList.toggle("shadow-[0_6px_20px_-14px_rgb(62_35_18/0.35)]", s);
+      }
+      window.addEventListener("scroll", onScroll, { passive: true }); onScroll();
+
+      // Animaciones de entrada
+      var items = document.querySelectorAll(".reveal");
+      if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add("is-visible"); io.unobserve(en.target); } });
+        }, { rootMargin: "0px 0px -8% 0px", threshold: 0.12 });
+        items.forEach(function (el) { io.observe(el); });
+      } else {
+        items.forEach(function (el) { el.classList.add("is-visible"); });
+      }
+
+      document.getElementById("year").textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>

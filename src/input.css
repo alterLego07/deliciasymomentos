@@ -1,0 +1,148 @@
+/*
+  Delicias & Momentos — estilos base (Tailwind CSS v4)
+  Compilar:  npm run build   |   Desarrollo: npm run dev
+*/
+@import "tailwindcss";
+
+/* Tailwind escanea el HTML de la raíz */
+@source "../index.html";
+
+/* ------------------------------------------------------------------
+   Tokens de diseño
+   Contrastes verificados sobre fondo blanco cálido (#FFFDF8):
+   brown 10.4:1 · ink 14.9:1 · muted 6.2:1 · gold-ink 6.1:1
+   gold (#B58937) = 3.1:1 → solo decorativo/íconos, nunca texto chico.
+------------------------------------------------------------------- */
+@theme {
+  --color-brown: #5C351C;        /* títulos, CTA principal */
+  --color-brown-dark: #3E2312;   /* hover CTA, footer */
+  --color-gold: #B58937;         /* acentos, líneas, íconos */
+  --color-gold-ink: #7A5A1E;     /* dorado apto para texto (AA) */
+  --color-gold-light: #E2C17A;   /* dorado sobre fondos oscuros */
+  --color-cream: #F4E6C2;        /* fondos cálidos, bloques */
+  --color-cream-soft: #FAF2DF;   /* secciones alternas */
+  --color-warm-white: #FFFDF8;   /* fondo principal */
+  --color-ink: #2B2521;          /* texto principal */
+  --color-muted: #6B5D52;        /* texto secundario */
+  --color-line: #E8D9B5;         /* bordes suaves */
+  --color-whatsapp: #167A43;     /* verde WhatsApp accesible (blanco 5.3:1) */
+
+  --font-serif: "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-sans: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --radius-card: 1.25rem;
+  --shadow-soft: 0 1px 2px rgb(62 35 18 / 0.06), 0 8px 24px -12px rgb(62 35 18 / 0.18);
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem; /* compensa el header sticky */
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-warm-white font-sans text-ink antialiased;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  h1, h2, h3 {
+    @apply font-serif text-brown;
+    line-height: 1.15;
+    text-wrap: balance;
+  }
+  p { text-wrap: pretty; }
+
+  :focus-visible {
+    outline: 3px solid var(--color-gold-ink);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* Contenedor */
+  .container-site { @apply mx-auto w-full max-w-6xl px-5 sm:px-6 lg:px-8; }
+
+  /* Etiqueta superior de sección */
+  .eyebrow {
+    @apply inline-flex items-center gap-3 text-xs font-semibold tracking-[0.2em] uppercase text-gold-ink;
+  }
+  .eyebrow::before {
+    content: "";
+    @apply block h-px w-8 bg-gold;
+  }
+
+  .section-title { @apply mt-3 text-3xl font-semibold sm:text-4xl lg:text-[2.75rem]; }
+  .section-lead  { @apply mt-4 max-w-2xl text-lg text-muted; }
+
+  /* Botones (mín. 48px de alto) */
+  .btn {
+    @apply inline-flex min-h-12 cursor-pointer items-center justify-center gap-2.5 rounded-full px-6 py-3 text-center text-base font-semibold;
+    transition: background-color .2s var(--ease-out-soft), color .2s var(--ease-out-soft),
+                border-color .2s var(--ease-out-soft), transform .2s var(--ease-out-soft), box-shadow .2s var(--ease-out-soft);
+  }
+  .btn:active { transform: translateY(1px); }
+  .btn-primary { @apply bg-brown text-warm-white hover:bg-brown-dark; box-shadow: var(--shadow-soft); }
+  .btn-secondary { @apply border-2 border-brown/25 bg-transparent text-brown hover:border-brown hover:bg-cream/50; }
+  .btn-light { @apply bg-warm-white text-brown hover:bg-cream; }
+  .btn-lg { @apply min-h-14 px-7 text-lg; }
+
+  /* Tarjetas */
+  .card {
+    @apply rounded-[1.25rem] bg-warm-white;
+    box-shadow: var(--shadow-soft);
+    transition: transform .3s var(--ease-out-soft), box-shadow .3s var(--ease-out-soft);
+  }
+  @media (hover: hover) and (prefers-reduced-motion: no-preference) {
+    .card-hover:hover { transform: translateY(-4px); box-shadow: 0 2px 4px rgb(62 35 18 / .06), 0 18px 40px -16px rgb(62 35 18 / .3); }
+    .card-hover:hover .photo img { transform: scale(1.04); }
+  }
+
+  /* Íconos en círculo */
+  .icon-badge {
+    @apply inline-flex size-12 shrink-0 items-center justify-center rounded-full bg-cream text-brown;
+  }
+
+  /* ---------- Fotos con placeholder ----------
+     Si la imagen de /public/images/ no existe, se ve un placeholder
+     cálido con el nombre del archivo esperado.                      */
+  .photo {
+    @apply relative isolate overflow-hidden bg-cream;
+    background-image:
+      radial-gradient(120% 90% at 20% 10%, rgb(255 253 248 / .55), transparent 60%),
+      repeating-linear-gradient(135deg, rgb(181 137 55 / .10) 0 2px, transparent 2px 14px),
+      linear-gradient(160deg, #EFDDB3, #DDBF85);
+  }
+  .photo img {
+    @apply absolute inset-0 z-10 size-full object-cover;
+    transition: transform .6s var(--ease-out-soft);
+  }
+  .photo-ph {
+    @apply absolute inset-0 flex flex-col items-center justify-center gap-2 p-4 text-center text-brown;
+  }
+  .photo-ph svg { @apply size-8 opacity-60; }
+  .photo-ph span {
+    @apply rounded-full bg-warm-white/80 px-3 py-1 text-xs font-semibold;
+  }
+}
+
+/* Animación de entrada (solo con JS activo y sin reduced-motion) */
+@media (prefers-reduced-motion: no-preference) {
+  .js-motion .reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity .7s var(--ease-out-soft), transform .7s var(--ease-out-soft);
+    transition-delay: var(--delay, 0ms);
+  }
+  .js-motion .reveal.is-visible { opacity: 1; transform: none; }
+}
